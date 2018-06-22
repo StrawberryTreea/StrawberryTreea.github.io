@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link type="text/css" href="css/zhucestyle.css" rel="stylesheet" />
+		<script src="js/js1.js"></script>
+	</head>
+
+	<body>
+
+		<div id="box1">
+			<img src="img/logo.png" id="img1" />
+			<ul id="ul1">
+				<li id="li1">
+					<a href="index.html">首页</a>
+				</li>
+				<li onmousemove="xs2()" onmouseout="yc2()">商品</li>
+				<li onmousemove="xs3()" onmouseout="yc3()">周边</li>
+				<li onmousemove="xs4()" onmouseout="yc4()">新闻</li>
+				<li>
+					<a href="cart.html">购物车</a>
+				</li>
+			</ul>
+			<ul id="denglu">
+				<li id="dl2" onclick="window.location.href='zhuce.html'">|&nbsp;注册</li>
+				<li id="dl1">登陆&nbsp;</li>
+			</ul>
+			<form>
+				<ul id="sousuo">
+					<li><input type="image" id="sousuo2" src="img/sosuo.PNG" onclick="search()" /></li>
+					<li><input type="text" id="sousuo1" value="" /></li>
+				</ul>
+			</form>
+		</div>
+		<div id="box2" class="box2" onmousemove="xs2()" onmouseout="yc2()">
+			<ul class="ul2">
+				<li>有机</li>
+				<li>蔬菜</li>
+				<li>水果</li>
+				<li>沙拉</li>
+				<li>食谱</li>
+			</ul>
+		</div>
+		<div id="box3" class="box2" onmousemove="xs3()" onmouseout="yc3()">
+			<ul class="ul2">
+				<li>厨具</li>
+				<li>餐具</li>
+				<li>限量</li>
+				<li>折扣</li>
+				<li>储藏</li>
+			</ul>
+		</div>
+		<div id="box4" class="box2" onmousemove="xs4()" onmouseout="yc4()">
+			<ul class="ul2">
+				<li>推荐</li>
+				<li>资讯</li>
+				<li>文章</li>
+				<li>视频</li>
+				<li>微博</li>
+			</ul>
+		</div>
+		<div id="div0">
+			<div id="div1">
+				<form>
+					<table width="80%" align="center" border="0">
+						<tr>
+							<td colspan="2" align="center">
+								<h1>欢迎注册新用户</h1></td>
+						</tr>
+						<tr>
+							<td align="left"></td>
+							<td align="left" style="color:#999999">6~18个字符，可使用字母、数字、下划线，需以字母开头</td>
+						</tr>
+						<tr align="center">
+							<td align="left"><span class="xx">*</span>密码</td>
+							<td align="left"><input type="text" value=" "></td>
+						</tr>
+						<tr>
+							<td align="left"></td>
+							<td align="left" style="color:#999999">6~16个字符，区分大小写</td>
+						</tr>
+						<tr align="center">
+							<td align="left"><span class="xx">*</span>确认密码</td>
+							<td align="left"><input type="text" value=" "></td>
+						</tr>
+						<tr>
+							<td align="left"></td>
+							<td align="left" style="color:#999999">请再次填写密码</td>
+						</tr>
+						<tr align="center">
+							<td align="left"><span class="xx">*</span>手机号码</td>
+							<td align="left"><input type="text" id="mainMobileIpt" name="mobile" class="input ipt norWidthIpt" value="" style="padding-left: 35px;width:292px;">
+							</td>
+						</tr>
+						<tr>
+							<td align="left"></td>
+							<td align="left" style="color:#999999">忘记密码时，可以通过该手机号码快速找回密码</td>
+						</tr>
+						<tr>
+							<td align="left"><span class="xx">*</span>验证码</td>
+							<td align="left"><input type="text" value=" ">
+								<img id="vcodeImg" class="vCode" style="cursor:pointer;" src="" alt="验证码">
+								<a id="vcodeA" href="#" tabindex="-1">看不清楚？换张图片</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="left"></td>
+							<td align="left" style="color:#999999">请填写图片中的字符，不区分大小写</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<td><input type="button" value="免费获取验证码" style="border-radius: 8px;"></td>
+						</tr>
+
+						<tr align="center">
+							<td align="right"><span class="xx">*</span>短信验证码</td>
+							<td align="left"><input type="text" value=" "></td>
+						</tr>
+						<tr>
+							<td align="right"></td>
+							<td align="left" style="color:#999999">请查收手机短信，并填写短信中的验证码</td>
+						</tr>
+						<tr>
+							<td align="right"></td>
+							<td align="left"><input id="mainAcceptIpt" type="checkbox" checked="checked" tabindex="-1" /> 同意
+								<a href="http://reg.163.com/agreement.shtml" target="_blank" tabindex="-1">"服务条款"</a>和
+								<a href="http://reg.163.com/agreement_game.shtml" target="_blank" tabindex="-1">"隐私权相关政策"</a>
+							</td>
+						</tr>
+						<tr>
+							<tr>
+								<td align="right">
+									<select name="mainDomain" id="mainDomainSelect" class="input1">
+										<option selected="selected" value="163.com">+86</option>
+										<option value="126.com">+83</option>
+										<option value="yeah.net">+169</option>
+									</select>
+								</td>
+								<td>
+									<input id="nicktell" maxlength="24" type="text" class="input1" placeholder="手机号">
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" align="left">
+									<input type="button" value="立即注册" disabled="disabled" class="input1" id="protollg" onclick="progdj()" />
+								</td>
+							</tr>
+					</table>
+					<table align="center" width="70%" border="0">
+						<tr>
+							<td><input type="checkbox" id="protol" onclick="xieyi1()" /><span class="sp1">我已阅读并同意相关服务条款和隐私政策</span></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</body>
+
+</html>

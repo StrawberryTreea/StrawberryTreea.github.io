@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>搜索</title>
+		<link type="text/css" href="css/searchstyle.css" rel="stylesheet" />
+		<script src="js/js1.js"></script>
+	</head>
+
+	<body>
+		<div id="main">
+
+			<div id="box1">
+				<img src="img/logo.png" id="img1" />
+				<ul id="ul1">
+					<li id="li1">
+						<a href="index.html">首页</a>
+					</li>
+					<li onmousemove="xs2()" onmouseout="yc2()">商品</li>
+					<li onmousemove="xs3()" onmouseout="yc3()">周边</li>
+					<li onmousemove="xs4()" onmouseout="yc4()">新闻</li>
+					<li>
+						<a href="cart.html">购物车</a>
+					</li>
+				</ul>
+				<ul id="denglu">
+					<li id="dl2" onclick="window.location.href='zhuce.html'">|&nbsp;注册</li>
+					<li id="dl1">登陆&nbsp;</li>
+				</ul>
+				<form>
+					<ul id="sousuo">
+						<li><input type="image" id="sousuo2" src="img/sosuo.PNG" onclick="search()" /></li>
+						<li><input type="text" id="sousuo1" value="" /></li>
+					</ul>
+				</form>
+			</div>
+			<div id="box2" class="box2" onmousemove="xs2()" onmouseout="yc2()">
+				<ul class="ul2">
+					<li>有机</li>
+					<li>蔬菜</li>
+					<li>水果</li>
+					<li>沙拉</li>
+					<li>食谱</li>
+				</ul>
+			</div>
+			<div id="box3" class="box2" onmousemove="xs3()" onmouseout="yc3()">
+				<ul class="ul2">
+					<li>厨具</li>
+					<li>餐具</li>
+					<li>限量</li>
+					<li>折扣</li>
+					<li>储藏</li>
+				</ul>
+			</div>
+			<div id="box4" class="box2" onmousemove="xs4()" onmouseout="yc4()">
+				<ul class="ul2">
+					<li>推荐</li>
+					<li>资讯</li>
+					<li>文章</li>
+					<li>视频</li>
+					<li>微博</li>
+				</ul>
+			</div>
+
+			<div id="fenlei">
+				<h4>产地</h4>
+				<input type="checkbox" name="end" id="end" value="tt" onclick="te()" />全部&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="all" id="" value="1" />山东&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="all" id="" value="2" />河南&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="all" id="" value="3" />浙江&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="all" id="" value="4" />内蒙古&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="all" id="" value="5" />广东
+
+				<h4>类型</h4>
+				<input type="checkbox" name="end2" id="end2" value="tt" onclick="te2()" />全部&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="all2" id="" value="1" />叶菜类&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="all2" id="" value="2" />根茎类&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="all2" id="" value="3" />瓜果&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="all2" id="" value="4" />菌类&nbsp;&nbsp;&nbsp;&nbsp;
+
+				<h4>价格</h4>
+				<input type="checkbox" name="end3" id="end3" value="tt" onclick="te3()" />全部&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="all3" id="" value="1" />4元以下&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="all3" id="" value="2" />5-6元&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="all3" id="" value="3" />6-7元&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="all3" id="" value="4" />7-8元&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="all3" id="" value="5" />8元以上
+			</div>
+			<div id="jieguo">
+				<div class="zhanshi">
+					<img class="yxtp" src="img/14.jpg" />
+					<h2 class="yxmz">菠萝</h2><br /><br /><br />
+					<span class="yxjg">产地：广州   类型：瓜果   价格：12元</span>
+				</div>
+				<div class="zhanshi">
+					<img class="yxtp" src="img/16.jpg" />
+					<h2 class="yxmz">卷心菜</h2><br /><br /><br />
+					<span class="yxjg">产地：山东 类型：根茎类 价格：7元</span>
+				</div>
+				<div class="zhanshi">
+					<img class="yxtp" src="img/17.jpg" />
+					<h2 class="yxmz">辣椒</h2><br /><br /><br />
+					<span class="yxjg">产地：河南 类型：瓜果 价格：3元</span>
+				</div>
+				<div class="zhanshi">
+					<img class="yxtp" src="img/18.jpg" />
+					<h2 class="yxmz">花椰菜</h2><br /><br /><br />
+					<span class="yxjg">产地：河南 类型：叶菜类 价格：5元</span>
+				</div>
+				<div class="zhanshi">
+					<img class="yxtp" src="img/19.jpg" />
+					<h2 class="yxmz">萝卜</h2><br /><br /><br />
+					<span class="yxjg">产地：内蒙古 类型：根茎类 价格：13元</span>
+				</div>
+				<div class="zhanshi">
+					<img class="yxtp" src="img/20.jpg" />
+					<h2 class="yxmz">桃子</h2><br /><br /><br />
+					<span class="yxjg">产地：浙江 类型：瓜果 价格：21元</span>
+				</div><br /><br />
+			</div>
+		</div>
+	</body>
+
+</html>

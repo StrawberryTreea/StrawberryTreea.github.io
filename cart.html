@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link type="text/css" href="css/cartstyle.css" rel="stylesheet" />
+		<script src="js/js1.js"></script>
+	</head>
+
+	<body>
+		<div id="box"></div>
+
+		<div id="box1">
+			<img src="img/logo.png" id="img1" />
+			<ul id="ul1">
+				<li id="li1">
+					<a href="index.html">首页</a>
+				</li>
+				<li onmousemove="xs2()" onmouseout="yc2()">商品</li>
+				<li onmousemove="xs3()" onmouseout="yc3()">周边</li>
+				<li onmousemove="xs4()" onmouseout="yc4()">新闻</li>
+				<li>
+					<a href="cart.html">购物车</a>
+				</li>
+			</ul>
+			<ul id="denglu">
+				<li id="dl2" onclick="window.location.href='zhuce.html'">|&nbsp;注册</li>
+				<li id="dl1">登陆&nbsp;</li>
+			</ul>
+			<form>
+				<ul id="sousuo">
+					<li><input type="image" id="sousuo2" src="img/sosuo.PNG" onclick="search()" /></li>
+					<li><input type="text" id="sousuo1" value="" /></li>
+				</ul>
+			</form>
+		</div>
+		<div id="box2" class="box2" onmousemove="xs2()" onmouseout="yc2()">
+			<ul class="ul2">
+				<li>有机</li>
+				<li>蔬菜</li>
+				<li>水果</li>
+				<li>沙拉</li>
+				<li>食谱</li>
+			</ul>
+		</div>
+		<div id="box3" class="box2" onmousemove="xs3()" onmouseout="yc3()">
+			<ul class="ul2">
+				<li>厨具</li>
+				<li>餐具</li>
+				<li>限量</li>
+				<li>折扣</li>
+				<li>储藏</li>
+			</ul>
+		</div>
+		<div id="box4" class="box2" onmousemove="xs4()" onmouseout="yc4()">
+			<ul class="ul2">
+				<li>推荐</li>
+				<li>资讯</li>
+				<li>文章</li>
+				<li>视频</li>
+				<li>微博</li>
+			</ul>
+		</div>
+		<form id="form1" name="form1" action="" method="post">
+
+			<table id="tb1" align="center" border="" cellspacing="5" cellpadding="0">
+				<tr>
+					<th>购物车</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="sp" id="sp1" value="12" onclick="jisuan(Number(this.value),this.checked)" /></td>
+					<td><img src="img/11.jpg" /></td>
+					<td class="td3">橙子</td>
+					<td class="td4">12</td>
+
+					<td><input type="checkbox" name="sp" id="sp3" value="23" onclick="jisuan(Number(this.value),this.checked)" /></td>
+					<td><img src="img/16.jpg" /></td>
+					<td class="td3">卷心菜</td>
+					<td class="td4">23</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="sp" id="sp2" value="7" onclick="jisuan(Number(this.value),this.checked)" /></td>
+					<td><img src="img/12.jpg" /></td>
+					<td class="td3">梨</td>
+					<td class="td4">17</td>
+
+					<td><input type="checkbox" name="sp" id="sp3" value="10" onclick="jisuan(Number(this.value),this.checked)" /></td>
+					<td><img src="img/17.jpg" /></td>
+					<td class="td3">辣椒</td>
+					<td class="td4">10</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="sp" id="sp3" value="5" onclick="jisuan(Number(this.value),this.checked)" /></td>
+					<td><img src="img/13.jpg" /></td>
+					<td class="td3">柿子</td>
+					<td class="td4">5</td>
+
+					<td><input type="checkbox" name="sp" id="sp3" value="26" onclick="jisuan(Number(this.value),this.checked)" /></td>
+					<td><img src="img/14.jpg" /></td>
+					<td class="td3">菠萝</td>
+					<td class="td4">26</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="sp" id="sp3" value="15" onclick="jisuan(Number(this.value),this.checked)" /></td>
+					<td><img src="img/18.jpg" /></td>
+					<td class="td3">花椰菜</td>
+					<td class="td4">15</td>
+
+					<td><input type="checkbox" name="sp" id="sp3" value="9" onclick="jisuan(Number(this.value),this.checked)" /></td>
+					<td><img src="img/19.jpg" /></td>
+					<td class="td3">萝卜</td>
+					<td class="td4">9</td>
+				</tr>
+
+				<tr>
+					<td class="td3">合计：</td>
+					<td><input type="text" id="jiner" value="0" disabled="disabled" /></td>
+					<td id="jiesuan" colspan="2"><input type="button" id="tijiao" value="去付款" /></td>
+				</tr>
+
+		</form>
+	</body>
+
+</html>
