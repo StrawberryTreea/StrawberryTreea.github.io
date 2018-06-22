@@ -1,0 +1,180 @@
+*{
+	margin: 0;
+}
+body{
+	/*background-color: whitesmoke;*/
+	background-image: url(../img/bj.jpg);
+}
+.input1{
+	border:deepskyblue 1px solid;
+	border-radius:5px;
+	overflow:hidden;
+	line-height: 24px;
+}
+h1,h3{
+	color: limegreen;
+}
+#div0{
+	margin: auto;
+	background-image: url(../img/banner4.jpg) no-repeat;
+	/*background: url(../img/banner4.jpg)) no-repeat;*/
+	width: 1264px;
+	height: 669px;
+}
+#div1{
+	margin: 100px auto auto auto; 
+	width: 35%;
+	background-color: white;
+	border: solid 5px goldenrod;
+}
+.shuru1{
+	color: yellow;
+}
+#protollg{
+	width: 275px; 
+	background-color: dimgray; 
+	color: lightgray;
+}
+.sp1{
+	color: crimson;
+}
+
+ul{
+	list-style: none;
+}
+
+#box{
+	width: 100%;
+	height: 100%;
+	background-color: grey;
+	position: absolute;
+	filter: alpha(opacity=50);  
+	opacity: 0.5;  
+	z-index: 1;
+	top: 0;
+	left: 0;
+	display: none;
+}
+#dl{
+	position: absolute;
+	z-index: 1;
+	left: 35%;
+	top: 20%;
+	width: 390px;
+	height: 420px;
+	display: none;
+}
+#dl .input1{
+	maxlength:60px;
+	border: 2px solid #00BFFF;
+	border-radius:10px;
+	height: 30px;
+}
+#tdtemp{height: 163px;}
+#dl3{
+	 width: 275px; 
+	 background-color: black; 
+	 color: white;
+	 border-color: #00BFFF;
+}
+
+
+	
+#box1{
+	width: 100%;
+	height: 70px;
+	background-color:green;
+	color:whitesmoke;
+	font-weight:800;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+#img1{
+	 height: 70px;
+	 float: left;
+	 margin-right: 100px;
+}
+#ul1{
+	float: left;
+}
+#ul1 li{
+		float: left;
+		display: block;
+		width: 55px;
+		height: 30px;
+/*		background-color: cornflowerblue;*/
+		margin: 20px 20px;
+		line-height: 30px;
+		text-align: center;
+}	
+#ul1 li:hover{
+	color: white;
+}
+#ul1 li a:link {color : white;}
+#ul1 li a:visited {color : #00BFFF;}
+#ul1 li a:hover {color: white;}
+#ul1 li a:active {color : white;}
+#sousuo1{
+	height: 28px;
+	border: 3px solid darkgray;
+	border-radius:4px 0px 0px 4px;
+	width: 300px;
+	float: right;
+	display: block;
+	margin:20px auto 20px auto;
+}
+#sousuo2{
+	height: 30px;
+	width: 45px;
+	border: 3px solid darkgray;
+	border-radius:0px 4px 4px 0px;
+    float: right;
+    display: block;
+    margin: 20px 40px 20px auto;
+    background-color: darkgrey;
+}
+#denglu li{
+	float: right;
+	margin: 26px 0 26px 0;
+}
+#denglu #dl2{
+	margin-right: 80px;
+}
+
+#box2{
+	top: 50px;
+	left: 410px;
+}
+.box2{
+	display: none;
+	width: 80px;
+	height: 140px;
+	background-color:green;
+	color: white;
+	position: absolute;
+}
+.ul2{
+	padding: 0;
+	background-color: green;
+	border: solid black 1px;
+	text-align: center;
+	color:white;
+}
+.ul2 li{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+}
+.ul2 li:hover{
+	background-color:green;
+	color: white;
+}
+#box3{
+	top: 50px;
+	left: 505px;
+}
+#box4{
+	top: 50px;
+	left: 600px;
+}
